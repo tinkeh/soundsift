@@ -1,0 +1,3 @@
+pyechonest==8.0.2
+nltk==3.0.0
+pyen==2.3

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
+	<link type="text/css" rel="stylesheet" href="../static/feed.css">
+</head>
+<body>
+	<h4>feed 4 {{username}}</h4>
+	<div class="feed-container">
+		{% for news_story in news_list %}
+		<div class="story-elem" onclick="location.href='{{news_story.news_url}}';" style="cursor: pointer;">
+			<div class="story-head">
+				<div class="story-image">
+					<img src="{{news_story.img_src}}"></img>
+				</div>
+				<div class="story-head-text">
+					<div class="story-artist">
+						<span>{{news_story.artist_name}}</span>
+					</div>
+					<div class="story-title">
+						<h3>{{news_story.news_title}}</h3>
+					</div>
+				</div>
+			</div>
+			<div class="story-preview">
+				<p>
+					{{news_story.news_content}}
+					<a href="{{news_story.news_url}}"> ((read on...))</a>
+				</p>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</body>
+</html>

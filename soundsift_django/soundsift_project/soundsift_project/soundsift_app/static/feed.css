@@ -1,0 +1,67 @@
+body {
+	font-size: 100%;
+	font-family: 'Libre Baskerville', serif;
+	background-image: url('back.png');
+}
+
+body h4 {
+	text-align: center;
+	background-color: rgb(255,255,255);
+	border-radius: 2px;
+}
+
+.feed-container {
+	width: 100%;
+}
+
+.story-elem {
+	background-color: rgba(255,255,255,.95);
+	padding: .5em .5em;
+	border-radius: 2px;
+	margin: .5em;
+	float: left;
+	width: calc(33.3% - 2.2em);
+	box-shadow: 0px 0px 5px #BBB;
+}
+
+.story-head {
+	width: 100%;
+}
+
+.story-image {
+	float: right;
+	width: 50%;
+}
+
+.story-image img {
+	width: 100%;
+}
+
+.story-head-text {
+	float: right;
+	width: 50%;
+}
+
+.story-artist {
+	font-size: .9em;
+	color: #777777;
+	text-align: right;
+	margin-right: .5em;
+}
+
+.story-title {
+	text-align: right;
+	margin-right: .5em;
+}
+
+.story-title h3 {
+	margin-top: 3px;
+	margin-bottom: 0;
+}
+
+.story-preview {
+	clear: both;
+	padding-top: 2px;
+	font-size: .9em;
+}
+

@@ -1,0 +1,51 @@
+body {
+	font-family: "Libre Baskerville", serif;
+	margin: 0;
+}
+
+.sinevas {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	top: 0;
+}
+
+.wraps {
+	width: 100%;
+	font-size: 100%;
+	margin-top: 50px;
+}
+
+.text-centered {
+	text-align: center;
+}
+
+.sc-name {
+	position: relative;
+	top: 100px;
+}
+
+.sc-name-in {
+	border: none;
+	background: rgba(0,0,0,0);
+}
+
+.sc-name-in {
+	font-size: 1em;
+	font-family: "Libre Baskerville", serif;
+}
+
+.sc-name-in:focus {
+	outline: none;
+}
+
+.lil-b-animation {
+	position: fixed;
+	width: 300px;
+	top: 50%;
+	left: 50%;
+	margin-left: -170px;
+	margin-top: -200px;
+	visibility: hidden;
+}

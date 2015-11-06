@@ -1,0 +1,24 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href='{% static "main.css" %}'>
+	<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="{% static "main.js" %}" defer></script>
+
+</head>
+<body>
+	<svg class="sinevas">
+		<path id="ola" stroke="black" stroke-width="1" fill-opacity="0.0">
+		</path>
+	</svg>
+	<div class="text-centered wraps">
+		<img class="lil-b-animation" id="animation" src="{% static 'protectlilbb.png' %}">
+		<p>well hey, so could you tell us your soundcloud?</p>
+		<form class="sc-name" id = "sc-name" method="POST" action="process_username">{% csrf_token %}
+			<label for="sc-name-in">it's</label>
+			<input type="text" name="name" class="sc-name-in" id="sc-name-in"></input>
+		</form>
+	</div>
+</body>
+</html>
